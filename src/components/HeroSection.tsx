@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   const handleDownloadResume = () => {
     // In a real implementation, this would download the resume
-    window.open('/resume.pdf', '_blank');
+    window.open('/Eknoor.pdf', '_blank');
   };
 
   return (

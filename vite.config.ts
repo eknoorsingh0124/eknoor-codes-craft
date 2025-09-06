@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/eknoor-codes-craft/" : "/",  // 👈 ADD THIS
   server: {
     host: "::",
     port: 8080,
@@ -14,5 +15,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === "production" ? "/eknoor-codes-craft/" : "/", // ✅ important
 }));
