@@ -12,10 +12,12 @@ const HeroSection = () => {
     }
   };
 
-  const handleDownloadResume = () => {
-    // In a real implementation, this would download the resume
-    window.open('/Eknoor.pdf', '_blank');
-  };
+const handleDownloadResume = () => {
+  const link = document.createElement("a");
+  link.href = `${import.meta.env.BASE_URL}Eknoor.pdf`; // ✅ works local + GitHub Pages
+  link.download = "Eknoor.pdf";
+  link.click();
+};
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
