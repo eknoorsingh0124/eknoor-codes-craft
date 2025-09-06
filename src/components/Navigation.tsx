@@ -43,7 +43,7 @@ const Navigation = ({ isDark, toggleTheme }: NavigationProps) => {
               ES
             </div>
             <span className="text-lg font-semibold text-foreground hidden sm:block">
-              Eknoor Singh Sidhu
+              Eknoor Singh
             </span>
           </motion.div>
 
